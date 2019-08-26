@@ -67,9 +67,9 @@ class Todos extends Component{
             if(category.length>0){
                 if(todos[i].category === newCategory){
                     todoList.push(
-                        <div style={{width:'100%', margin:'auto', marginBottom:10}} className={todos[i].finish?"row p-3":"shadow row p-3"} key={i} onClick={()=>this.finishTodoHandler(todos[i].id)} draggable={true} onDragStart={(e)=>this.drag(e,todos[i].id)}>
+                        <div style={{width:'100%', margin:'auto', marginBottom:10, borderRadius:10}} className={todos[i].finish?"row p-3":"shadow row p-3"} key={i} onClick={()=>this.finishTodoHandler(todos[i].id)} draggable={true} onDragStart={(e)=>this.drag(e,todos[i].id)}>
                             <div className="col-2">
-                                <FontAwesomeIcon icon={faCheck} color={todos[i].finish?"green":"black"} />
+                                <FontAwesomeIcon icon={faCheck} style={{fontSize:30}} color={todos[i].finish?"green":"grey"} />
                             </div>
                             <div className="col" style={todos[i].finish?{color:'grey',textDecorationLine: 'line-through'}:{color:'black'}}>
                                 {todos[i].todo}
@@ -83,9 +83,9 @@ class Todos extends Component{
             }
             else{
                 todoList.push(
-                    <div style={{width:'100%', margin:'auto', marginBottom:10}} className={todos[i].finish?"row p-3":"shadow row p-3"} key={i} onClick={()=>this.finishTodoHandler(todos[i].id)} draggable={true} onDragStart={(e)=>this.drag(e,todos[i].id)}>
+                    <div style={{width:'100%', margin:'auto', marginBottom:10, borderRadius:10}} className={todos[i].finish?"row p-3":"shadow row p-3"} key={i} onClick={()=>this.finishTodoHandler(todos[i].id)} draggable={true} onDragStart={(e)=>this.drag(e,todos[i].id)}>
                         <div className="col-2">
-                            <FontAwesomeIcon icon={faCheck} color={todos[i].finish?"green":"black"} />
+                            <FontAwesomeIcon icon={faCheck} style={{fontSize:30}} color={todos[i].finish?"green":"grey"} />
                         </div>
                         <div className="col" style={todos[i].finish?{color:'grey',textDecorationLine: 'line-through'}:{color:'black'}}>
                             {todos[i].todo}
