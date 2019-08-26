@@ -168,7 +168,7 @@ class Todos extends Component{
                                 </div>
                             </div>
                             <div>
-                                {todos.length>0 ? this.listItems(newCategory) : <span className="d-flex align-items-center justify-content-center">No Data</span>}
+                                {todos.length>0 ? this.listItems(newCategory) : <span className="d-flex align-items-center justify-content-center">No data</span>}
                             </div>
                         </div>
                     </div>
