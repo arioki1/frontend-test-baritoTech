@@ -139,7 +139,7 @@ class Todos extends Component{
         return categoryList
     }
     render(){
-        const {widthScreen, heightScreen, newTodo, todos, newCategory} = this.state
+        const {heightScreen, newTodo, todos, newCategory} = this.state
         return(
             <div className="d-flex align-items-center justify-content-center bg-primary" style={{height:heightScreen}}>
                 <div className="row bg-light p-3 shadow">
